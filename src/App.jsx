@@ -1,11 +1,8 @@
-import { useState } from 'react'
-
-function App() {
+import Header from "./components/Header.jsx"
+const App = () => {
 
   return (
-      <>
-        <h1>RickAndMorty</h1>
-      </>
+      <Header />
   )
 }
 

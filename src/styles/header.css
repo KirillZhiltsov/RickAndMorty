@@ -1,0 +1,16 @@
+.section_header{
+    display: flex;
+    width: 100%;
+    background-color: rgba(0,14,12,0.85);
+    user-select: none;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: RGB(10,37,23) solid 2px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}

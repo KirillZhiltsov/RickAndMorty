@@ -1,0 +1,17 @@
+.logo{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.logo_text{
+    text-align: center;
+    font-family: GetSchwifty, serif;
+    color: #1b8a5a;
+    font-size: 32px;
+}
+
+.logo_img{
+    width: 100px;
+    margin: 5px;
+}
