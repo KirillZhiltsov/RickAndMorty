@@ -1,0 +1,15 @@
+body {
+    background-color: #0b1410; /* Базовый глубокий темно-зеленый цвет */
+    background-image:
+        /* Тонкие горизонтальные линии сетки */
+            linear-gradient(rgba(0, 255, 128, 0.03) 1px, transparent 1px),
+                /* Тонкие вертикальные линии сетки */
+            linear-gradient(90deg, rgba(0, 255, 128, 0.03) 1px, transparent 1px),
+                /* Дополнительный радиальный градиент для объема (светлее в центре, темнее по краям) */
+            radial-gradient(circle at 50% 30%, rgba(20, 50, 35, 0.6) 0%, rgba(5, 10, 8, 0.9) 100%);
+
+    background-size: 40px 40px, 40px 40px, 100% 100%; /* Размер клеток сетки */
+    color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+}
