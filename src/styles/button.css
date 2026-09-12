@@ -6,7 +6,7 @@ button{
     border-left: none;
     border-bottom: none;
     background: none;
-    color: RGBA(34,119,65,1);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -18,9 +18,11 @@ button:hover{
     border-right: none;
     border-left: none;
     border-bottom: 1px solid RGBA(34,119,65,0.5);
+    color: RGBA(34,119,65,0.8);
 }
 
 button:active{
     background: RGBA(34,119,65,0.1);
     border-bottom: 2px solid RGBA(34,119,65,1);
+    color: RGBA(34,119,65,1);
 }
