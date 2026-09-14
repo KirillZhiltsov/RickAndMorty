@@ -4,9 +4,9 @@ const NavigationMenu = () => {
     const menuItems = ["Characters", "Locations", "Episodes", "Search"]
     return (
         <nav className="navigation">
-            {menuItems.map((items) => (
-                <NavigationButton type='buttom'>
-                    {items}
+            {menuItems.map((item) => (
+                <NavigationButton type='button'>
+                    {item}
                 </NavigationButton>
     ))}
         </nav>

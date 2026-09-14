@@ -7,8 +7,9 @@
 .logo_text{
     text-align: center;
     font-family: GetSchwifty, serif;
-    color: #1b8a5a;
+    color: RGB(73,149,115);
     font-size: 32px;
+    white-space: nowrap;
 }
 
 .logo_img{

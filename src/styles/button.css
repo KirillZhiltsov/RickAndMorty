@@ -1,4 +1,4 @@
-button{
+.navigation-button{
     height: 100%;
     border-radius: 10px 10px 0 0;
     border-top: none;
@@ -12,16 +12,16 @@ button{
     font-size: 24px;
 }
 
-button:hover{
+.navigation-button:hover{
     background-color: RGBA(34,119,65,0.05);
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid RGBA(34,119,65,0.5);
-    color: RGBA(34,119,65,0.8);
+    color: RGBA(68,173,106, 0.8);
 }
 
-button:active{
+.navigation-button:active{
     background: RGBA(34,119,65,0.1);
     border-bottom: 2px solid RGBA(34,119,65,1);
     color: RGBA(34,119,65,1);

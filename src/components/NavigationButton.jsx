@@ -1,6 +1,6 @@
 const NavigationButton = (props) => {
     const {
-        className = "",
+        className = 'navigation-button',
         type = "button",
         children,
     } = props
