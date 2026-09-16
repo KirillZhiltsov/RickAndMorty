@@ -1,11 +1,11 @@
 import Header from "./components/Header.jsx"
-import Character from "./components/Character.jsx";
+import CharacterList from "./components/CharacterList.jsx";
 const App = () => {
 
   return (
       <>
       <Header />
-      <Character />
+      <CharacterList />
       </>
   )
 }
