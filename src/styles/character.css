@@ -45,9 +45,35 @@
     gap: 5px;
 }
 
-.info-1-1{
-    width: 15px;
-    height: 15px;
+.info_green{
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+    gap: 5px;
+    color: green;
+}
+
+.info_red{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 5px;
+    color: red;
+}
+
+.info-1-1_red{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: red 0 0 10px;
+}
+
+.info-1-1_green{
+    display: flex;
+    width: 20px;
+    height: 20px;
     background-color: green;
     border-radius: 15px;
+    box-shadow: green 0 0 10px;
 }
