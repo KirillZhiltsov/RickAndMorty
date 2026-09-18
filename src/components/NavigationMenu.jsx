@@ -1,7 +1,7 @@
 import NavigationButton from "./NavigationButton.jsx";
 
 const NavigationMenu = () => {
-    const menuItems = ["Characters", "Locations", "Episodes", "Search"]
+    const menuItems = ["Characters", "Locations", "Episodes"]
     return (
         <nav className="navigation">
             {menuItems.map((item) => (

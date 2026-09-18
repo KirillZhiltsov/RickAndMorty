@@ -1,8 +1,15 @@
-const Character = () => {
-    let text = 'Alive'
+const Character = (props) => {
+    const { key,
+            name,
+            status,
+            species,
+            gender,
+            image,
+            } = props;
+
     let className1, className2;
 
-    if(text === "Alive"){
+    if(status === "Alive"){
         className1 = 'info_green'
         className2 = 'info-1-1_green'
     } else {
@@ -11,23 +18,23 @@ const Character = () => {
     }
 
     return (
-        <div className="character-card">
+        <div className="character-card" id={key}>
             <div className="img-character">
-                <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez"/>
+                <img src={image} alt="Rick Sanchez"/>
             </div>
             <div className="character-info">
-                <h3 className="name">Rick Sanchez</h3>
+                <h3 className="name">{name}</h3>
                 <div className={className1}>
                     <div className = {className2}></div>
-                    <span>{text}</span>
+                    <span>{status}</span>
                 </div>
                 <div className="info">
                     <div className = "info-2-1"></div>
-                    <span>Human</span>
+                    <span>{species}</span>
                 </div>
                 <div className="info">
                     <div className = "info-3-1"></div>
-                    <span>Earth C-137</span>
+                    <span>{gender}</span>
                 </div>
             </div>
         </div>
