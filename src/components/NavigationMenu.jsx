@@ -1,11 +1,19 @@
 import NavigationButton from "./NavigationButton.jsx";
 
-const NavigationMenu = () => {
+const NavigationMenu = (props) => {
+    const{
+        onActive,
+        setActive
+    } = props;
+
     const menuItems = ["Characters", "Locations", "Episodes"]
     return (
         <nav className="navigation">
             {menuItems.map((item) => (
-                <NavigationButton type='button'>
+                <NavigationButton
+                    type='button'
+                    onActive = {onActive}
+                    setActive = {setActive}>
                     {item}
                 </NavigationButton>
     ))}

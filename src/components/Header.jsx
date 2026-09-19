@@ -1,11 +1,18 @@
 import Logo from './Logo.jsx';
 import NavigationMenu from './NavigationMenu';
 
-const Header = () => {
+const Header = (props) => {
+    const{
+        onActive,
+        setActive
+    } = props
+
     return (
         <section className="section_header">
             <Logo />
-            <NavigationMenu />
+            <NavigationMenu
+            onActive = {onActive}
+            setActive = {setActive}/>
         </section>
     )
 }

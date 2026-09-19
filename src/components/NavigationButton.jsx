@@ -1,13 +1,16 @@
 const NavigationButton = (props) => {
-    const {
-        className = 'navigation-button',
+    let {
         type = "button",
         children,
+        onActive,
+        setActive
     } = props
-
+    const className = onActive === children ? 'navigation-button-active' : 'navigation-button'
     return (
-        <button className={`button ${className}`}
-        type={type}
+        <button
+            className={`navigation-button ${className}`}
+            type={type}
+            onClick={() => {setActive(children)}}
         >
             {children}
         </button>
