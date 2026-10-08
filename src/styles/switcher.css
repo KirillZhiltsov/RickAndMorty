@@ -1,0 +1,38 @@
+.page-switcher{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-auto-flow: column;
+    gap: 10px;
+    color: white;
+}
+
+.switch{
+    font-size: 45px;
+    border-bottom: RGB(10,37,23) solid 2px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,14,12,0.85);
+}
+
+.switch:hover{
+    background-color: RGBA(34,119,65,0.05);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid RGBA(34,119,65,0.5);
+    color: RGBA(68,173,106, 0.8);
+}
+
+.switch-active{
+    background-color: RGBA(34,119,65,0.05);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid RGBA(34,119,65,0.5);
+    color: RGBA(68,173,106, 0.8);
+}
