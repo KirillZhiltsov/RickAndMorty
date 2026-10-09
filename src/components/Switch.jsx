@@ -7,10 +7,19 @@ const Switch = (props) => {
 
     const className = onActive === children? 'switch-active' : 'switch'
 
+    let params;
+    if (children === "⬅"){
+         params = -1
+    } else if (children === "⮕"){
+         params = 1
+    } else{
+         params = children
+    }
+
     return (
         <div
             className={`switch ${className}`}
-            onClick={() => {setActive(children)}}
+            onClick={() => {setActive(params)}}
         >
             {children}
         </div>

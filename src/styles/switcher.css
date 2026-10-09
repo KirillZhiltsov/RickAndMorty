@@ -4,19 +4,23 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    text-align: center;
     grid-auto-flow: column;
     gap: 10px;
     color: white;
 }
 
 .switch{
+    display: flex;
     font-size: 45px;
     border-bottom: RGB(10,37,23) solid 2px;
     border-radius: 10px;
     width: 50px;
     height: 50px;
     background-color: rgba(0,14,12,0.85);
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
 }
 
 .switch:hover{

@@ -21,9 +21,15 @@ const PageSwitcher = (props) => {
         return mas
     }
 
-    let mas = nextSwitcher (5)
+    function newSlider (slid) {
+        setSlider(slider + slid)
+        nextSwitcher(slider + slid)
+    }
+
+    let mas = nextSwitcher (slider)
     return (
         <div className="page-switcher">
+            {slider !== 1 && <Switch setActive={newSlider}>⬅</Switch>}
             {mas.map((item) => (
                 <Switch
                 onActive = {onActive}
@@ -31,6 +37,7 @@ const PageSwitcher = (props) => {
                     {item}
                 </Switch>
             ))}
+            {slider !== maxSlide && <Switch setActive={newSlider}>⮕</Switch>}
         </div>
     )
 }

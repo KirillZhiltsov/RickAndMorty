@@ -8,6 +8,11 @@
     padding: 10px;
     background-color: rgba(0,14,12,1);
     user-select: none;
+    transition: transform 0.2s;
+}
+
+.character-card:hover{
+    transform: scale(1.05);
 }
 
 .img-character{
